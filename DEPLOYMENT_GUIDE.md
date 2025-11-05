@@ -19,7 +19,7 @@
 4. Database details to note:
    - Database Name: `u[your_user_id]_kdc` (e.g., u123456789_kdc)
    - Database Username: `u[your_user_id]_kdc`
-   - Database Password: **Create a strong password**
+   - Database Password: 
    - Hostname: `localhost`
    - Port: `3306`
 5. **IMPORTANT:** Save these credentials for config.production.php
@@ -30,11 +30,7 @@
    - `info@kiihabwemidevtcompany.com` (main contact)
    - `noreply@kiihabwemidevtcompany.com` (system emails)
    - `support@kiihabwemidevtcompany.com` (optional)
-3. Note SMTP credentials:
-   - SMTP Host: `smtp.hostinger.com`
-   - SMTP Port: `587` (TLS) or `465` (SSL)
-   - Username: Full email address
-   - Password: Email password
+3.
 
 ---
 
