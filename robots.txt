@@ -1,0 +1,52 @@
+# Robots.txt for Kiihabwemi Development Company Ltd
+# Domain: https://kiihabwemidevtcompany.com
+# Production Environment
+
+User-agent: *
+Allow: /
+Disallow: /pages/admin/
+Disallow: /config/
+Disallow: /includes/
+Disallow: /logs/
+
+# Specific pages
+Allow: /pages/about.php
+Allow: /pages/shop.php
+Allow: /pages/community.php
+Allow: /pages/contact.php
+Allow: /pages/product.php
+Allow: /pages/cart.php
+
+# Assets
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+
+# Sitemap
+Sitemap: https://kiihabwemidevtcompany.com/sitemap.xml
+
+# Crawl delay (in seconds)
+Crawl-delay: 10
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Allow good bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /assets/images/
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

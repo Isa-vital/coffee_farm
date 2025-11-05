@@ -1,0 +1,112 @@
+# Kiihabwemi Development Company Ltd
+# .gitignore for Coffee Farm Ecommerce Website
+
+# Configuration files with sensitive data
+config/config.php
+
+# Database files
+*.sql
+database.sql
+*.sqlite
+*.db
+
+# Logs
+logs/
+*.log
+error.log
+access.log
+
+# User uploaded content
+assets/images/products/*
+!assets/images/products/.gitkeep
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+.project
+.buildpath
+.settings/
+
+# PHP
+vendor/
+composer.lock
+composer.phar
+
+# Node modules (if using)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Backup files
+*.bak
+*.backup
+*~
+*.old
+backup/
+backups/
+
+# WordPress (if integrated)
+wp-config.php
+wp-content/uploads/
+
+# Session files
+sessions/
+tmp/
+
+# Cache
+cache/
+*.cache
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Build files
+dist/
+build/
+*.min.js
+*.min.css
+
+# Testing
+tests/
+phpunit.xml
+.phpunit.result.cache
+
+# Coverage reports
+coverage/
+*.coverage
+
+# Deployment
+deploy.sh
+deploy/
+
+# Documentation (keep in repo but ignore builds)
+docs/build/
+
+# Keep these files/folders
+!.htaccess
+!.gitignore
+!.gitkeep
