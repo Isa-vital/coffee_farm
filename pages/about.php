@@ -43,20 +43,18 @@ $pageKeywords = 'about KDC, coffee company Uganda, sustainable farming, youth em
             <div class="col-lg-6" data-aos="fade-left">
                 <h2 class="display-5 fw-bold mb-4">Who We Are</h2>
                 <p class="lead">
-                    Kiihabwemi Development Company Ltd (KDC) is your trusted agribusiness partner
-                    dedicated to serving the community and helping individuals realize their potential
-                    through environmentally friendly, sustainable, and profitable agribusinesses.
+                    Kiihabwemi Development Company Ltd (KDC) is a social enterprise based in Buhimba Town Council, Kikuube District, in Uganda’s Bunyoro region.
+                    Established in 2018 and officially incorporated in 2019, the company places a strong emphasis on coffee production as the core of its value chain.
+                    It partners with smallholder coffee farmers across the greater Albertine region, offering extensive support and training to enhance productivity and sustainability.
                 </p>
                 <p>
-                    Established in 2018 and officially incorporated in 2019, we are a limited company
-                    with our registered office in Buhimba Town Council, Kikuube district, Bunyoro region.
-                    Our business model focuses on agribusiness, with coffee production as our key value chain.
-                </p>
+                    Through its innovative Working Farm Model (WFM), KDC provides hands-on training in modern agronomic practices, supplies essential farming inputs, and offers tailored extension services.
+                    This model ensures that farmers benefit from competitive pricing and secure market opportunities for their coffee harvests.
+                    KDC’s focus on coffee—one of Uganda’s most important crops—enables it to drive socioeconomic development and improve livelihoods in the communities it serves
                 <p>
-                    Coffee is a crop of national importance in Uganda, offering significant opportunities
-                    for socioeconomic development. Through the Working Farm Model (WFM), we provide training
-                    in agronomic practices, farming inputs, and extension services to smallholder farmers,
-                    ensuring they receive competitive prices and market access for their coffee.
+                    As a trusted agribusiness partner, KDC is committed to promoting environmentally responsible, sustainable, and profitable farming.
+                    By investing in farmer capabilities and community empowerment, the company strengthens the region’s agricultural foundation while contributing to broader social and economic progress.
+                    Its mission reflects a deep dedication to environmental stewardship and the long-term prosperity of Uganda’s coffee sector.
                 </p>
             </div>
         </div>
@@ -104,11 +102,11 @@ $pageKeywords = 'about KDC, coffee company Uganda, sustainable farming, youth em
                     </div>
                     <h3 class="h4 fw-bold mb-3">Our Objectives</h3>
                     <ul class="list-unstyled small">
-                        <li class="mb-2"><i class="fas fa-check text-coffee me-2"></i>Increase production volumes for enhanced returns</li>
-                        <li class="mb-2"><i class="fas fa-check text-coffee me-2"></i>Value addition to prioritized crops</li>
-                        <li class="mb-2"><i class="fas fa-check text-coffee me-2"></i>Provide sustainable markets for farmers</li>
+                        <li class="mb-2"><i class="fas fa-check text-coffee me-2"></i>Provide sustainable markets for smallholder coffee farmers</li>
                         <li class="mb-2"><i class="fas fa-check text-coffee me-2"></i>Promote savings culture for resilience</li>
-                        <li class="mb-2"><i class="fas fa-check text-coffee me-2"></i>Encourage eco-friendly production</li>
+                        <li class="mb-2"><i class="fas fa-check text-coffee me-2"></i>Promote eco-friendly production for smallholder coffee farmers</li>
+                        <li class="mb-2"><i class="fas fa-check text-coffee me-2"></i>To increase production volumes for coffee among smallholder farmers for enhanced returns</li>
+                        <li class="mb-2"><i class="fas fa-check text-coffee me-2"></i>Promote good post harvest handling and value addition methods</li>
                     </ul>
                 </div>
             </div>

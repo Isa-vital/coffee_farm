@@ -20,6 +20,10 @@
                             href="<?php echo SITE_URL; ?>/pages/about.php">About Us</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link fw-bold <?php echo ($currentPage === 'team') ? 'active' : ''; ?>"
+                            href="<?php echo SITE_URL; ?>/pages/team.php">Our Team</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link fw-bold <?php echo ($currentPage === 'shop') ? 'active' : ''; ?>"
                             href="<?php echo SITE_URL; ?>/pages/shop.php">Shop</a>
                     </li>
