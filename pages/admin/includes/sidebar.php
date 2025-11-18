@@ -33,6 +33,12 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="admin-nav-link <?php echo basename($_SERVER['PHP_SELF']) === 'team.php' ? 'active' : ''; ?>"
+                    href="<?php echo SITE_URL; ?>/pages/admin/team.php">
+                    <i class="fas fa-users me-2"></i>Team Members
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="admin-nav-link <?php echo basename($_SERVER['PHP_SELF']) === 'settings.php' ? 'active' : ''; ?>"
                     href="<?php echo SITE_URL; ?>/pages/admin/settings.php">
                     <i class="fas fa-cog me-2"></i>Settings
