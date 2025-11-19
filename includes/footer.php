@@ -83,6 +83,7 @@
             <div class="row">
                 <div class="col-md-6 text-center text-md-start small">
                     <p class="mb-0">&copy; <?php echo date('Y'); ?> Kiihabwemi Development Company Ltd. All rights reserved.</p>
+                    <p class="mb-0 text-muted">Designed by <a href="https://techmarketug.com" class="text-coffee text-decoration-none" target="_blank">TechMarketUG.com</a></p>
                 </div>
                 <div class="col-md-6 text-center text-md-end small">
                     <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
