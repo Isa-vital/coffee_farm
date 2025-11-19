@@ -13,6 +13,24 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
+// Fetch site settings from database
+$siteSettings = [];
+try {
+    $stmt = $pdo->query("SELECT setting_key, setting_value FROM settings");
+    while ($row = $stmt->fetch()) {
+        $siteSettings[$row['setting_key']] = $row['setting_value'];
+    }
+} catch (PDOException $e) {
+    error_log("Error fetching settings: " . $e->getMessage());
+}
+
+// Helper function to get setting with fallback
+function getSetting($key, $default = '')
+{
+    global $siteSettings;
+    return $siteSettings[$key] ?? $default;
+}
+
 // Set default page variables if not set
 $pageTitle = $pageTitle ?? SITE_NAME;
 $pageDescription = $pageDescription ?? 'Premium coffee from Kiihabwemi Development Company Ltd. Supporting youth empowerment and sustainable farming in Uganda.';

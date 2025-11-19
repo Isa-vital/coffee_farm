@@ -61,14 +61,16 @@ try {
 // Handle settings update
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_settings'])) {
     try {
+        $updateCount = 0;
         foreach ($_POST as $key => $value) {
             if ($key !== 'update_settings') {
                 $stmt = $pdo->prepare("INSERT INTO settings (setting_key, setting_value) VALUES (?, ?) 
-                                      ON DUPLICATE KEY UPDATE setting_value = ?");
-                $stmt->execute([$key, $value, $value]);
+                                      ON DUPLICATE KEY UPDATE setting_value = VALUES(setting_value)");
+                $stmt->execute([$key, $value]);
+                $updateCount++;
             }
         }
-        $success = 'Settings updated successfully!';
+        $success = "Settings updated successfully! ($updateCount fields updated)";
     } catch (PDOException $e) {
         $error = 'Error updating settings: ' . $e->getMessage();
     }
@@ -89,14 +91,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['change_password'])) {
     } else {
         try {
             // Verify current password
-            $stmt = $pdo->prepare("SELECT password_hash FROM users WHERE id = ?");
+            $stmt = $pdo->prepare("SELECT password FROM users WHERE id = ?");
             $stmt->execute([$_SESSION['admin_id']]);
             $user = $stmt->fetch();
 
-            if ($user && password_verify($currentPassword, $user['password_hash'])) {
+            if ($user && password_verify($currentPassword, $user['password'])) {
                 // Update password
                 $newHash = password_hash($newPassword, PASSWORD_ARGON2ID);
-                $stmt = $pdo->prepare("UPDATE users SET password_hash = ? WHERE id = ?");
+                $stmt = $pdo->prepare("UPDATE users SET password = ? WHERE id = ?");
                 $stmt->execute([$newHash, $_SESSION['admin_id']]);
                 $success = 'Password changed successfully!';
             } else {

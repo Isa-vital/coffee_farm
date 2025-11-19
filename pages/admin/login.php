@@ -91,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="card shadow-lg border-0">
                 <div class="card-body p-5">
                     <div class="text-center mb-4">
-                        <img src="<?php echo SITE_URL; ?>/assets/images/logo.png" alt="KDC Logo" height="60" class="mb-3">
+                        <img src="<?php echo SITE_URL; ?>/assets/images/logo.jpg" alt="KDC Logo" height="60" class="mb-3">
                         <h3 class="fw-bold">Admin Login</h3>
                         <p class="text-muted">Enter your credentials to access the admin panel</p>
                     </div>
